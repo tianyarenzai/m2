@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Jan 09 19:44:57 CST 2018
+poi-3.8.pom>nexus-aliyun=
+poi-3.8.jar>central=
+poi-3.8.pom>central=
+poi-3.8.jar>nexus-aliyun=

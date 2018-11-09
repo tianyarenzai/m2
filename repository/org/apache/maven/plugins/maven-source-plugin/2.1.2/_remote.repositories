@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Jan 09 19:42:42 CST 2018
+maven-source-plugin-2.1.2.jar>central=
+maven-source-plugin-2.1.2.pom>nexus-aliyun=
+maven-source-plugin-2.1.2.pom>central=
+maven-source-plugin-2.1.2.jar>nexus-aliyun=

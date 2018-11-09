@@ -1,0 +1,6 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Fri Dec 08 09:50:00 CST 2017
+velocity-1.5.pom>nexus-aliyun=
+velocity-1.5.jar>nexus-aliyun=
+velocity-1.5.jar>central=
+velocity-1.5.pom>central=

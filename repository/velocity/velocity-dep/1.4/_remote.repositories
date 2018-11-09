@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Jan 09 19:45:06 CST 2018
+velocity-dep-1.4.jar>central=
+velocity-dep-1.4.pom>nexus-aliyun=
+velocity-dep-1.4.jar>nexus-aliyun=
+velocity-dep-1.4.pom>central=

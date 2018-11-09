@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Jan 09 19:45:24 CST 2018
+mysql-connector-java-5.1.15.jar>central=
+mysql-connector-java-5.1.15.pom>central=
+mysql-connector-java-5.1.15.pom>nexus-aliyun=
+mysql-connector-java-5.1.15.jar>nexus-aliyun=

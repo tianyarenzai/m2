@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Jan 09 19:45:00 CST 2018
+jersey-server-1.12.pom>nexus-aliyun=
+jersey-server-1.12.jar>nexus-aliyun=
+jersey-server-1.12.jar>central=
+jersey-server-1.12.pom>central=

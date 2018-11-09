@@ -1,0 +1,6 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Fri Dec 08 09:49:33 CST 2017
+surefire-booter-2.10.jar>nexus-aliyun=
+surefire-booter-2.10.jar>central=
+surefire-booter-2.10.pom>central=
+surefire-booter-2.10.pom>nexus-aliyun=

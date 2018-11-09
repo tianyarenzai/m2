@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Jan 09 19:45:01 CST 2018
+logkit-1.0.1.jar>nexus-aliyun=
+logkit-1.0.1.jar>central=
+logkit-1.0.1.pom>central=
+logkit-1.0.1.pom>nexus-aliyun=

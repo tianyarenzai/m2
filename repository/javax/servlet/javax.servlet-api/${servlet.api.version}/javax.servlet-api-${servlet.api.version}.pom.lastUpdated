@@ -1,0 +1,4 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Mon Jan 15 20:08:21 CST 2018
+default-http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1516018101855
+http\://maven.aliyun.com/nexus/content/groups/public/.error=Could not transfer artifact javax.servlet\:javax.servlet-api\:pom\:${servlet.api.version} from/to nexus-aliyun (http\://maven.aliyun.com/nexus/content/groups/public)\: Illegal character in path at index 85\: http\://maven.aliyun.com/nexus/content/groups/public/javax/servlet/javax.servlet-api/${servlet.api.version}/javax.servlet-api-${servlet.api.version}.pom

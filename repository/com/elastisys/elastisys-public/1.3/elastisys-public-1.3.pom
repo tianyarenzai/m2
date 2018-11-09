@@ -1,0 +1,110 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.elastisys</groupId>
+    <artifactId>elastisys</artifactId>
+    <version>1.3</version>
+  </parent>
+  <artifactId>elastisys-public</artifactId>
+  <packaging>pom</packaging>
+  <name>elastisys :: public</name>
+  <description>
+    Parent POM for public projects.
+  </description>
+  <properties>
+    <docker.repo>index.docker.io/v1/</docker.repo>
+    <docker.remoteName>${docker.image}</docker.remoteName>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <configuration>
+          <useReleaseProfile>false</useReleaseProfile>
+          <releaseProfiles>elastisys-public-release</releaseProfiles>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <profile>
+      <id>elastisys-public-release</id>
+      <build>
+        <!-- Plugins that are only included in release builds -->
+        <plugins>
+          <!-- Attach sources to published Maven artifacts -->
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <version>2.2.1</version>
+            <executions>
+              <execution>
+                <id>attach-sources</id>
+                <goals>
+                  <goal>jar-no-fork</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+
+          <!-- Attach javadocs to published Maven artifacts -->
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>2.9.1</version>
+            <executions>
+              <execution>
+                <id>attach-javadocs</id>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+
+          <!-- Sign published Maven artifacts -->
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>1.5</version>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+
+
+  <!-- Destination repositories for releases (Sonatype's OSS Repository Hosting).
+    Note: for releases to succeed, proper server credentials for the repository server
+    need to be added to the ~/.m2/settings.xml file of the user performing the release.
+    The ~/.m2/settings.xml file also needs to contain GPG signing credenials. For more
+    details, see http://central.sonatype.org/pages/apache-maven.html. -->
+  <distributionManagement>
+    <repository>
+      <id>oss-repo</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+    <snapshotRepository>
+      <id>oss-repo</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <site>
+      <id>elastisys-site</id>
+      <!-- TODO Setup site server -->
+      <url>scp://docs.elastisys.com</url>
+    </site>
+  </distributionManagement>
+</project>

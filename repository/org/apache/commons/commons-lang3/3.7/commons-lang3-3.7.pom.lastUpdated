@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Dec 25 17:05:50 CST 2017
+http\://maven.aliyun.com/nexus/content/groups/public/.error=Could not transfer artifact org.apache.commons\:commons-lang3\:pom\:3.7 from/to nexus-aliyun (http\://maven.aliyun.com/nexus/content/groups/public)\: maven.aliyun.com
+@default-nexus-aliyun-http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1514192749972

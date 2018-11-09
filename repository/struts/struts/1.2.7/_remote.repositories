@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Jan 09 19:44:31 CST 2018
+struts-1.2.7.pom>central=
+struts-1.2.7.pom>nexus-aliyun=
+struts-1.2.7.jar>nexus-aliyun=
